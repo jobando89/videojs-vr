@@ -34,7 +34,6 @@ export default {
     'global/document',
     'global/window',
     'video.js',
-    'three',
     'webvr-boilerplate'
   ],
   legacy: true,

@@ -436,9 +436,9 @@ class VR extends Plugin {
 
     this.camera.position.set(0, 0, 0);
     this.renderer = new THREE.WebGLRenderer({
-      devicePixelRatio: window.devicePixelRatio,
+   /*   devicePixelRatio: window.devicePixelRatio,
       alpha: false,
-      clearColor: 0xffffff,
+      clearColor: 0xffffff,*/
       antialias: true
     });
 

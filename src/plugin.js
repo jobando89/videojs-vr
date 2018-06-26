@@ -436,9 +436,9 @@ class VR extends Plugin {
 
     this.camera.position.set(0, 0, 0);
     this.renderer = new THREE.WebGLRenderer({
-   /*   devicePixelRatio: window.devicePixelRatio,
+      devicePixelRatio: window.devicePixelRatio,
       alpha: false,
-      clearColor: 0xffffff,*/
+      clearColor: 0xffffff,
       antialias: true
     });
 
@@ -467,7 +467,7 @@ class VR extends Plugin {
     this.prevTimestamps_ = [];
 
     this.renderedCanvas = this.renderer.domElement;
-    this.renderedCanvas.setAttribute('style', 'width: 100%; height: 100%; position: absolute; top:0;');
+    this.renderedCanvas.setAttribute('style', 'width: 100%; height: 100%;');
     this.player_.el().insertBefore(this.renderedCanvas, this.player_.el().firstChild);
     this.getVideoEl_().style.display = 'none';
 

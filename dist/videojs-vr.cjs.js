@@ -51531,9 +51531,9 @@ var VR = function (_Plugin) {
 
     this.camera.position.set(0, 0, 0);
     this.renderer = new WebGLRenderer({
-      /*   devicePixelRatio: window.devicePixelRatio,
-         alpha: false,
-         clearColor: 0xffffff,*/
+      devicePixelRatio: window$1.devicePixelRatio,
+      alpha: false,
+      clearColor: 0xffffff,
       antialias: true
     });
 

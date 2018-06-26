@@ -1,9 +1,3 @@
-/**
- * videojs-vr
- * @version 1.4.1
- * @copyright 2018 [object Object]
- * @license Apache-2.0
- */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('video.js')) :
   typeof define === 'function' && define.amd ? define(['video.js'], factory) :
@@ -51577,9 +51571,9 @@
 
       this.camera.position.set(0, 0, 0);
       this.renderer = new WebGLRenderer({
-        /*   devicePixelRatio: window.devicePixelRatio,
-           alpha: false,
-           clearColor: 0xffffff,*/
+        devicePixelRatio: window_1.devicePixelRatio,
+        alpha: false,
+        clearColor: 0xffffff,
         antialias: true
       });
 

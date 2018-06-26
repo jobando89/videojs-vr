@@ -51197,7 +51197,7 @@ var VR = function (_Plugin) {
       return this.changeProjection_('NONE');
     } else if (projection === '360') {
 
-      this.movieGeometry = new SphereBufferGeometry(256, 32, 32);
+      this.movieGeometry = new SphereBufferGeometry(256, 128, 128);
       this.movieMaterial = new MeshBasicMaterial({ map: this.videoTexture, overdraw: true, side: BackSide });
 
       this.movieScreen = new Mesh(this.movieGeometry, this.movieMaterial);

@@ -1,3 +1,9 @@
+/**
+ * videojs-vr
+ * @version 1.4.1
+ * @copyright 2018 [object Object]
+ * @license Apache-2.0
+ */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('video.js')) :
   typeof define === 'function' && define.amd ? define(['video.js'], factory) :
@@ -51606,7 +51612,7 @@
       this.prevTimestamps_ = [];
 
       this.renderedCanvas = this.renderer.domElement;
-      this.renderedCanvas.setAttribute('style', 'width: 100%; height: 100%; position: absolute; top:0;');
+      this.renderedCanvas.setAttribute('style', 'width: 100%; height: 100%;');
       this.player_.el().insertBefore(this.renderedCanvas, this.player_.el().firstChild);
       this.getVideoEl_().style.display = 'none';
 
